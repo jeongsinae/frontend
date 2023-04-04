@@ -1,0 +1,6 @@
+Collecting branca
+  Using cached branca-0.6.0-py3-none-any.whl (24 kB)
+Requirement already satisfied: jinja2 in c:\users\admin\anaconda3\envs\steamlit\lib\site-packages (from branca) (3.1.2)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\admin\anaconda3\envs\steamlit\lib\site-packages (from jinja2->branca) (2.1.1)
+Installing collected packages: branca
+Successfully installed branca-0.6.0
