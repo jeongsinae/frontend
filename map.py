@@ -6,28 +6,38 @@ import map
 from streamlit_folium import st_folium, folium_static
 
 def map():
-    st.title('Map')
+    with st.container():
+        st.title('Which wine are you looking for?🍷')
 
-    col_map, col_des = st.columns([4,1])
+        code = st.text_input(
+            'Search anything!',
+            value='',
+            placeholder='Wine'
+        )    ##### 여기서 입력값 받아와야함!!! 입력값 -> code
 
-    with col_map:
-        m = folium.Map(location=[35.228956, 126.843181], zoom_start=16)
+
+        st.text(' ')
+        st.text(' ')
+
+        # with col_map:
+        userspot = folium.Map(location=[35.228956, 126.843181], zoom_start=16)      ### user에 따라 바꿔야함
         folium.Marker(
             [35.228956, 126.843181],
             popup='GIST',
             tooltip='Dasan'
-        ).add_to(m)
+        ).add_to(userspot)
 
-        st_data = st_folium(m, width=725)
-    with col_des:
-        df = pd.DataFrame(
-        [
-            {"command": "st.selectbox", "rating": 4, "is_widget": True},
-            {"command": "st.balloons", "rating": 5, "is_widget": False},
-            {"command": "st.time_input", "rating": 3, "is_widget": True},
-        ]
-        )
-        edited_df = st.experimental_data_editor(df, num_rows="dynamic")
+        store1 = folium.Map(location=[35.2196, 126.8443], zoom_start=16)
+        folium.Marker(
+            [35.2196, 126.8443],
+            popup='A wine',
+            tooltip=''
+        ).add_to(store1)
 
-        favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
-        st.markdown(f"Your choices are **{favorite_command}** 🍷")
+        st_data = st_folium(userspot, width=700, height=500)  # 지도 크기 조절
+
+
+        txt = st.text_area( 'Details', '''
+            db에서 받아온 정보를 여기에 넣어줄 수 있지 않을까
+            ''')
+        # st.write('Sentiment:',txt)
