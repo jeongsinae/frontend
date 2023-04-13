@@ -8,15 +8,11 @@ pip install -r requirements.txt
 # Structure
 ```
 2023-NLP-LAB-2-THISPATH98/
-├── code/
-│   ├── main.py
-│   ├── network.py
-│   └── utils.py
-├── data/
-│   ├── sent_class.test.csv
-│   └── sent_class.train.csv
-├── result/
-│   └── sent_class.pred.csv
+├── pages/
+│   ├── 1_🏠_home.py
+│   ├── 2_🌎_map.py
+│   └── 3_🍷_wine.py
+├── Main.py
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -24,5 +20,5 @@ pip install -r requirements.txt
 
 # Quick Start
 ```Shell
-python myweb.py
+python pages/Main.py
 ```

@@ -3,6 +3,11 @@ import pandas as pd
 from streamlit import components
 
 
+st.set_page_config(
+    page_title="Hello",
+    page_icon="👋",
+)
+
 def slideshow(speed, images):
     slide_show = SlideShow()
     slide_show(speed=speed, images=images, key="slideshow")
