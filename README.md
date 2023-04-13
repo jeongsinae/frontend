@@ -1,8 +1,24 @@
-# frontend
+# 2023 GIST Data Engineering
 
-This repository is for a Data Engineering course project.
+# Installation
+```Shell
+pip install -r requirements.txt
+```
 
+# Structure
+```
+데이터엔지니어링이에용/
+├── pages/
+│   ├── 1_🏠_home.py
+│   ├── 2_🌎_map.py
+│   └── 3_🍷_wine.py
+├── Main.py
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
 
-Team members:
-박세진 이경로 김예원 정시내
-
+# Quick Start
+```Shell
+python pages/Main.py
+```
