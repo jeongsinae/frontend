@@ -3,6 +3,7 @@ import pandas as pd
 from PIL import Image
 import requests
 
+
 def home():
 
     tcol1, tcol2 = st.columns(2)
@@ -10,19 +11,17 @@ def home():
         url = "https://cdn.pixabay.com/photo/2016/07/26/16/16/wine-1543170_960_720.jpg"
         image = Image.open(requests.get(url, stream=True).raw)
 
-        st.image(image, caption='')
+        st.image(image, caption="")
     with tcol2:
         st.title("Welcome, we are WinePickers")
 
-
-    st.write(" ") 
-    st.write(" ") 
+    st.write(" ")
+    st.write(" ")
     st.write(" ")
 
-    st.subheader("000, your current location is 0000") #### user id, user 주소
-    
-    st.write(" ") 
+    st.subheader("000, your current location is 0000")  #### user id, user 주소
 
+    st.write(" ")
 
     st.subheader("Top 5 wines of this week")
 
@@ -39,7 +38,7 @@ def home():
 
     # 각 column에 이미지와 정보 배치
     with col1:
-        st.image(image_1) # 와인 사진
+        st.image(image_1)  # 와인 사진
         st.write(info_1)  # 이름
 
     with col2:
@@ -49,16 +48,16 @@ def home():
     with col3:
         st.image(image_2)
         st.write(info_2)
-    
+
     with col4:
         st.image(image_2)
         st.write(info_2)
-    
+
     with col5:
         st.image(image_2)
         st.write(info_2)
 
-    st.markdown(" ") 
+    st.markdown(" ")
     st.markdown(" ")
 
     #############3
@@ -76,7 +75,7 @@ def home():
 
     # 각 column에 이미지와 정보 배치
     with col1:
-        st.image(image_1) # 와인 사진
+        st.image(image_1)  # 와인 사진
         st.write(info_1)  # 이름
 
     with col2:
@@ -86,15 +85,15 @@ def home():
     with col3:
         st.image(image_2)
         st.write(info_2)
-    
+
     with col4:
         st.image(image_2)
         st.write(info_2)
-    
+
     with col5:
         st.image(image_2)
         st.write(info_2)
-    st.markdown(" ") 
+    st.markdown(" ")
     st.markdown(" ")
     ############3
 
@@ -112,7 +111,7 @@ def home():
 
     # 각 column에 이미지와 정보 배치
     with col1:
-        st.image(image_1) # 와인 사진
+        st.image(image_1)  # 와인 사진
         st.write(info_1)  # 이름
 
     with col2:
@@ -122,15 +121,15 @@ def home():
     with col3:
         st.image(image_2)
         st.write(info_2)
-    
+
     with col4:
         st.image(image_2)
         st.write(info_2)
-    
+
     with col5:
         st.image(image_2)
         st.write(info_2)
-    st.markdown(" ") 
+    st.markdown(" ")
     st.markdown(" ")
 
     ################
@@ -149,7 +148,7 @@ def home():
 
     # 각 column에 이미지와 정보 배치
     with col1:
-        st.image(image_1) # 와인 사진
+        st.image(image_1)  # 와인 사진
         st.write(info_1)  # 이름
 
     with col2:
@@ -159,16 +158,12 @@ def home():
     with col3:
         st.image(image_2)
         st.write(info_2)
-    
+
     with col4:
         st.image(image_2)
         st.write(info_2)
-    
+
     with col5:
         st.image(image_2)
         st.write(info_2)
-        
 
-
-
-    
