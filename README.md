@@ -7,7 +7,7 @@ pip install -r requirements.txt
 
 # Structure
 ```
-2023-NLP-LAB-2-THISPATH98/
+데이터엔지니어링이에용/
 ├── pages/
 │   ├── 1_🏠_home.py
 │   ├── 2_🌎_map.py
