@@ -20,5 +20,5 @@ pip install -r requirements.txt
 
 # Quick Start
 ```Shell
-python pages/Main.py
+streamlit run Main.py
 ```
