@@ -8,6 +8,7 @@ st.set_page_config(
     page_icon="👋",
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 # Initialize connection.
@@ -36,5 +37,7 @@ st.set_page_config(
 # # st.table(data)
     
 
+=======
+>>>>>>> b35cd27ee0b56168339b34664e8f49c98f933374
 =======
 >>>>>>> b35cd27ee0b56168339b34664e8f49c98f933374
